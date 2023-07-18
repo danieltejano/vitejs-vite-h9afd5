@@ -1,7 +1,7 @@
-import Model
 <script setup lang="ts">
-const model = new Model();
-console.log('Model:\t', model).name;
+import {Ticket} from './system.d.ts'
+const model = new Ticket();
+console.log('Model:\t', model.aliasName);
 </script>
 
 <template></template>
