@@ -18,7 +18,11 @@ interface Crudable{
   async destroy?(token:string): boolean
 }
 
-class Model implements Crudable{
+export class Model implements Crudable{
   protected aliasName = this.constructor.name
   
+}
+
+export class Ticket extends Model {
+
 }
